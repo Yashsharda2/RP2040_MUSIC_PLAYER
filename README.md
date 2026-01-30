@@ -17,24 +17,6 @@ It supports Wave files only as of now.
        Playback progress bar
        Volume level
 
-# Rotary Encoder
-    The rotary encoder is used for real-time volume control.
-       Clockwise - Increases Volume
-       Anticlockwise - Decrease Volume
-       Push Button is used to select song (Press once to scroll through songs and press again to select song)
-               
-# Libraries Required
-               #include <SPI.h>
-               #include <SD.h>
-               #include <I2S.h>
-               #include <Adafruit_GFX.h>
-               #include <Adafruit_ST7789.h>
-               
-# Wave File Format
-               Bit Rate               705kbps
-               Channels               Mono
-               Sample_rate            44.100kHz
-               Sample_size            16bit
 # Future Updates
       1.MP3 audio format support will be added to reduce storage usage and allow larger music libraries. 
       2.The user interface will be improved with better layout, smoother rendering, and a clearer song selection screen using the rotary encoder. 
