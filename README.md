@@ -24,3 +24,4 @@ It supports Wave files only as of now.
       4.Button handling will be made non-blocking for faster and more responsive control. 
       5.The file system will be enhanced to support automatic scanning, sorting, and handling of a large number of audio files.
 
+License: MIT
