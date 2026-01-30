@@ -21,7 +21,7 @@ It supports Wave files only as of now.
     The rotary encoder is used for real-time volume control.
        Clockwise - Increases Volume
        Anticlockwise - Decrease Volume
-       Push Button is used to select song 
+       Push Button is used to select song (Press once to scroll through songs and press again to select song)
                
 # Libraries Required
                #include <SPI.h>
@@ -35,6 +35,10 @@ It supports Wave files only as of now.
                Channels               Mono
                Sample_rate            44.100kHz
                Sample_size            16bit
-
-
+# Future Updates
+      1.MP3 audio format support will be added to reduce storage usage and allow larger music libraries. 
+      2.The user interface will be improved with better layout, smoother rendering, and a clearer song selection screen using the rotary encoder. 
+      3.Separate SPI buses will be used for the SD card and TFT display to avoid bus contention and improve audio stability. 
+      4.Button handling will be made non-blocking for faster and more responsive control. 
+      5.The file system will be enhanced to support automatic scanning, sorting, and handling of a large number of audio files.
 
