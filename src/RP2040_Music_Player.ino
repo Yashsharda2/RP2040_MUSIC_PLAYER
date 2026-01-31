@@ -33,7 +33,6 @@ void updateProgressBar() {
     static uint32_t lastPos = 0;
     uint32_t currentPos = audioFile.position();
     
-    // Refresh only if moved significantly to prevent audio stutter
     if (abs((int)(currentPos - lastPos)) < 10000) return; 
     lastPos = currentPos;
 
