@@ -1,27 +1,28 @@
-# RP2040_MUSIC_PLAYER
-A music player made using Raspberry Pi Pico W
-It supports Wave files only as of now.
+# RP2040 Music Player
 
-# Features
-    Supports playback of uncompressed **PCM WAV audio files** from SD card
-    16-bit, 44.1 kHz, mono audio output via I2S interface
-    Audio output through external I2S amplifier (MAX98357A)
-    Hardware volume control using rotary encoder
-    Dedicated Play / Pause, Next, and Previous push buttons
-    Automatic track switching when a song ends 
-    
-# User Interface
-    Display shows following information
-       Current song name 
-       Playback status (PLAY / PAUSE)
-       Playback progress bar
-       Volume level
+A portable music player powered by the **Raspberry Pi Pico W**.  
+Plays audio files stored on an SD card through an I2S amplifier, controlled via rotary encoder and push buttons, with a TFT display showing playback info in real time.
 
-# Future Updates
-      1.MP3 audio format support will be added to reduce storage usage and allow larger music libraries. 
-      2.The user interface will be improved with better layout, smoother rendering, and a clearer song selection screen using the rotary encoder. 
-      3.Separate SPI buses will be used for the SD card and TFT display to avoid bus contention and improve audio stability. 
-      4.Button handling will be made non-blocking for faster and more responsive control. 
-      5.The file system will be enhanced to support automatic scanning, sorting, and handling of a large number of audio files.
+Built for simplicity — no OS, no overhead, just music.
 
-License: MIT
+---
+
+## Features
+
+#### Playback
+- WAV (16-bit PCM uncompressed) and MP3 audio support
+- 44.1 kHz mono output via I2S (MAX98357A amplifier)
+- Auto advances to next track when song ends
+
+#### Controls
+- Rotary encoder for volume adjustment and track browsing
+- Dedicated Push buttons — Play/Pause, Next, Previous
+- Press encoder to open/close track selection menu
+
+#### Display
+- Current song name
+- Playback status — PLAYING / PAUSED
+- Real-time progress bar
+- Volume level bar
+
+---
